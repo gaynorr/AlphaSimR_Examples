@@ -64,7 +64,8 @@ ddVar = 0.3 # Variance
 
 #Yield trial error variance, bushels per acre
 #Relates to error variance for an entry mean
-varE = 60
+#Taken for a Bayer patent application
+varE = 270
 
 #Yield trial effective replications for calculating error
 #Roughly related to the number of locations relative to YT_1

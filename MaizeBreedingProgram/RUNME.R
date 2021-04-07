@@ -35,7 +35,7 @@ for(rep in 1:nReps){
   for(year in 1:burninYears){ #Change to any number of desired years
     cat("Working on year:",year,"\n")
     p = P[year]
-
+    source("UpdateParents.R") #Pick new parents based on last year's data
     source("UpdateTesters.R") #Pick new testers and hybrid parents
     source("AdvanceYear.R") #Advances yield trials by a year
     source("UpdateResults.R") #Track summary data
@@ -49,7 +49,7 @@ for(rep in 1:nReps){
   for(year in (burninYears+1):(burninYears+futureYears)){
     cat("Working on year:",year,"\n")
     p = P[year]
-
+    source("UpdateParents.R") #Pick new parents based on last year's data
     source("UpdateTesters.R") #Pick new testers and hybrid parents
     source("AdvanceYear.R") #Advances yield trials by a year
     source("UpdateResults.R") #Track summary data
@@ -70,7 +70,7 @@ for(rep in 1:nReps){
   for(year in (burninYears+1):(burninYears+futureYears)){
     cat("Working on year:",year,"\n")
     p = P[year]
-
+    source("UpdateParents.R") #Pick new parents based on last year's data
     source("UpdateTesters.R") #Pick new testers and hybrid parents
     source("AdvanceYearAlt.R") #Advances yield trials by a year
     source("UpdateResults.R") #Track summary data
