@@ -1,3 +1,4 @@
+# Tested on version 1.3.2
 library(AlphaSimR)
 
 # Step 1 ----
