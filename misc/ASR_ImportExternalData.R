@@ -49,7 +49,7 @@ SP = SimParam$new(founderPop)
 # Load your own QTL effects (optional)
 # This is useful if you want to model known QTL, estimated effects from GS, or
 # you just want to create your own distribution for effects.
-# The marker names most match the names given in the map above.
+# The marker names must match the names given in the map above.
 # You can model additive effects, dominance effects, and an intercept.
 qtlEffects = data.frame(marker = c("x1", "x11"),
                         aditiveEffect = c(1, -1))
